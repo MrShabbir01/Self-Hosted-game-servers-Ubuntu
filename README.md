@@ -1,4 +1,4 @@
-# Self-Hosted-game-servers-Ubuntu-
+# Self-Hosted-game-servers-Ubuntu
 
 ## Purpose of This Repository
 
