@@ -1,7 +1,7 @@
 # Self-Hosted-game-servers-Ubuntu
 
 ## Overview
-This repository documents the architecture, deployment, and operation of self-hosted dedicated game servers running on Ubuntu Linux within a Proxmox virtualized environment.
+This repository documents the architecture, deployment, and operation of self-hosted dedicated game servers running on Ubuntu Server Minimal within a Proxmox virtualized environment.
 
 The system is designed to provide stable, secure, and maintainable hosting for multiple Steam-based dedicated game servers using a shared and repeatable operational model. Emphasis is placed on predictability, isolation, and rebuildability rather than ad-hoc or manual administration.
 
@@ -17,7 +17,7 @@ The content focuses on stability, security, and repeatability. It intentionally 
 
 ## Environment Summary
 - Hypervisor: Proxmox VE
-- Guest OS: Ubuntu (Desktop edition, configured for server-style operation)
+- Guest OS: Ubuntu Server Minimal, configured for server-style operation
 - Hosting Model: One Linux VM hosting multiple game servers
 - Game Platform: SteamCMD
 - Firewall: UFW (default deny)
@@ -26,7 +26,7 @@ The content focuses on stability, security, and repeatability. It intentionally 
 ## Design Decisions
 
 ### Operating System Choice
-Ubuntu was selected due to its long-term stability, predictable update cycle, and extensive community support. At the time of deployment, Ubuntu Desktop was chosen instead of Ubuntu Server due to familiarity. Non-essential services were disabled post-installation, and the system was configured to behave as a headless server.
+Ubuntu was selected due to its long-term stability, predictable update cycle, and extensive community support. Non-essential services were disabled post-installation, and the system was configured to behave as a headless server.
 The overall design remains compatible with Ubuntu Server and can be migrated without any changes in the architecture.
 
 ### Security and User Isolation
